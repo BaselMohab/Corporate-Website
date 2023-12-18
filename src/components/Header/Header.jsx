@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,16 +12,19 @@ return (
             <Navbar bg="light" expand="lg" fixed="top">
                 <Container>
                 <Navbar.Brand class="navbar-logo" href="#home">Corporate</Navbar.Brand>
-                <Nav className="navbar-nav ms-auto">
-                    {navdata.map((list) => {
-                    const { id, name, href } = list;
-                    return (
-                        <Nav.Link class="nav-link" key={id} href={href}>
-                        {name}
-                        </Nav.Link>
-                    );
-                    })}
-                </Nav>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="navbar-nav ms-auto">
+                        {navdata.map((list) => {
+                        const { id, name, href } = list;
+                        return (
+                            <Nav.Link class="nav-link" key={id} href={href}>
+                            {name}
+                            </Nav.Link>
+                        );
+                        })}
+                    </Nav>
+                </Navbar.Collapse>
                 </Container>
             </Navbar>
         </section>
