@@ -27,7 +27,7 @@ return (
             {worksData.map((work)=> {
                 const {id, link, image, title, subtitle} = work
                 return (
-                    <Col sm={4} key={id}>
+                    <Col md={4} sm={6} key={id}>
                         <div className="works-grid">
                             <a href={link}>
                                 <img src={image} />
@@ -41,10 +41,11 @@ return (
                 )
             })}
         </Row>
-        <Pagination className='d-flix justify-content-center pagination'>{items}</Pagination>
+        <Pagination className='d-flex justify-content-center pagination'>{items}</Pagination>
         </Container>
     </section>
 )
 }
 
 export default Works
+
