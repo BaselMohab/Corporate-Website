@@ -19,10 +19,10 @@ return (
                 <p>learn more about us</p>
             </div>
             <Row>
-                <Col sm={6} className='sm-6'>
+                <Col sm={6} >
                     <Image src='../assets/images/img1.jpg' fluid className='about-img' />
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} >
                     <div className='about-content'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Reprehenderit dicta veritatis sint quidem asperiores magni eaque praesentium temporibus, 
@@ -57,3 +57,4 @@ return (
 }
 
 export default About
+
