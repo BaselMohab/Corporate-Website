@@ -21,7 +21,7 @@ const navdata = [
     },
     {
         id: 5,
-        name: 'teams',
+        name: 'team',
         href:"#teams"
     },
     {
