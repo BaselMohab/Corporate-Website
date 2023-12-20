@@ -16,13 +16,13 @@ return (
             <Row>
                 <Form className='form'>
                     <Row>
-                        <Col>
+                        <Col md={4} sm={12}>
                             <Form.Control className='name' type='text' placeholder="Enter Full Name" required />
                         </Col>
-                        <Col>
+                        <Col md={4} sm={12}>
                             <Form.Control className='email' type='email' placeholder="Email Address" required />
                         </Col>
-                        <Col>
+                        <Col md={4} sm={12}>
                             <Form.Control className='tel' type='tel' placeholder="Enter Your Contact Number" required />
                         </Col>
                     </Row>
