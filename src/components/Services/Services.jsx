@@ -18,7 +18,7 @@ return (
             {services.map((service)=>{
                 const {id, icon, title, description } = service;
                 return(
-                <Col sm={4} key={id} className='services-col'>
+                <Col sm={4} className='services-col' key={id}>
                     <div className="icon">
                         {icon}
                     </div>
