@@ -10,14 +10,14 @@ return (
     <section id='blog' className='blog'>
         <Container fluid>
             <div className="blog-title">
-                <h2>LATEST FROM BLOG</h2>
+                <h2>latest blogs</h2>
                 <p>- get our latest news from blog -</p>
             </div> 
             <Row>
                 {blogData.map((blog)=>{
                     const {id, image, date, title, description, link} = blog;
                     return(
-                        <Col sm={4} key={id} className='blog-col'>
+                        <Col md={4} sm={12} key={id} className='blog-col'>
                             <Card>
                                 <Card.Img src={image} />
                                 <Card.Body>
