@@ -9,14 +9,14 @@ return (
     <section id='teams' className='teams'>
         <Container fluid>
             <div className="teams-title">
-                <h2>Our Teams</h2>
+                <h2>Our Team</h2>
                 <p>some of our experts</p>
             </div> 
         <Row>
             {teamsData.map((team)=> {
                 const {id, image, fbLink, twitterLink, linkedinLink, fbIcon, twitterIcon, linkedinIcon, name, designation, description } = team;
                 return (
-                        <Col sm={3} key={id} className='teams-col text-center'>
+                        <Col lg={3} md={4} sm={6} key={id} className='teams-col text-center'>
                             <div className="image">
                                 <img src={image} alt={name} />
                                 <div className="overlay">
